@@ -1,14 +1,11 @@
 // Create new, custom tab:
- mod.wizards.newContentElement.wizardItems {
-     ku.header = LLL:EXT:ku_image_with_overlay/Resources/Private/Language/locallang_be.xlf:tab_name
- }
 
 mod.wizards.newContentElement.wizardItems {
-   // add the content element to the tab "KU"
-   ku {
+   // add the content element
+   media {
       elements {
          ku_image_with_overlay {
-            iconIdentifier = content-text
+            iconIdentifier = content-image
             title = LLL:EXT:ku_image_with_overlay/Resources/Private/Language/locallang_be.xlf:title
             description = LLL:EXT:ku_image_with_overlay/Resources/Private/Language/locallang_be.xlf:description
             tt_content_defValues {

@@ -1,4 +1,4 @@
 Sitepackage for the project "KU: Image with overlay"
 ==============================================================
 
-Add some explanation here.
+Hero banner with text overlay

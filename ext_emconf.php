@@ -4,7 +4,7 @@
  * Extension Manager/Repository config file for ext "ku_image_with_overlay".
  */
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'KU: Image with overlay',
+    'title' => 'KU Image with overlay',
     'description' => 'Hero banner with text overlay',
     'category' => 'templates',
     'constraints' => [

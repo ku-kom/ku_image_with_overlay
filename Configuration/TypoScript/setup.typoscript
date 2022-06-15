@@ -29,9 +29,9 @@ page {
     }
 }
 
-######################
-#### FLEXIBLE BOX ####
-######################
+################################
+#### IMAGE BOX WITH OVERLAY ####
+################################
 tt_content.ku_image_with_overlay =< lib.contentElement
 tt_content.ku_image_with_overlay {
 	templateName = ImageWithOverlay

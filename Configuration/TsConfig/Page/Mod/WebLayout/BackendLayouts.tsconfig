@@ -1,4 +1,0 @@
-#
-# BACKENDLAYOUTS
-#
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:ku_image_with_overlay/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts" extensions="tsconfig">
