@@ -17,7 +17,6 @@
     </f:section>
 </f:spaceless>
 <f:section name="imageWithOverlay">
-    <f:debug title="" inline="">{_all}</f:debug>
     <f:variable name="boxColor">{data.ku_color_family}</f:variable>
     <f:variable name="imgExists">{f:if(condition: '{files.0}', else:'no-img', then:'with-img')}</f:variable>
     <div class="image-with-overlay {imgExists}">
@@ -57,7 +56,7 @@
             }
 
             .image-with-overlay-text>span {
-                font-size: 1.5rem;
+                font-size: 1.75rem;
                 line-height: 1.6;
                 font-weight: 600;
                 background-color: var(--overlay-background);

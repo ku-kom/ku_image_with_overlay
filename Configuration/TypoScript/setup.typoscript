@@ -1,7 +1,7 @@
 ######################
 #### DEPENDENCIES ####
 ######################
-# <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/setup.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ku_prototype/Configuration/TypoScript/setup.typoscript">
 
 
 ################################
