@@ -1,0 +1,24 @@
+#
+# TCEFORM
+#
+TCEFORM {
+    pages {
+
+    }
+    tt_content {
+        header_layout.types.ku_image_with_overlay.disabled = 1
+        header_position.types.ku_image_with_overlay.disabled = 1
+        date.types.ku_image_with_overlay.disabled = 1
+        
+        frame_layout.addItems {
+        }
+
+        background_image {
+            types.ku_image_with_overlay.disabled = 1
+        }
+
+        background_image_options {
+            types.ku_image_with_overlay.disabled = 1
+        
+    }
+}

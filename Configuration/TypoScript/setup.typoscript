@@ -1,0 +1,47 @@
+######################
+#### DEPENDENCIES ####
+######################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/setup.typoscript">
+
+
+##############
+#### PAGE ####
+##############
+page {
+    includeCSS {
+        theme = EXT:ku_image_with_overlay/Resources/Public/Scss/Theme/theme.scss
+    }
+
+    includeJSLibs {
+
+    }
+
+    includeJS {
+
+    }
+
+    includeJSFooterlibs {
+
+    }
+
+    includeJSFooter {
+
+    }
+}
+
+######################
+#### FLEXIBLE BOX ####
+######################
+tt_content.ku_image_with_overlay =< lib.contentElement
+tt_content.ku_image_with_overlay {
+	templateName = ImageWithOverlay
+	templateRootPaths.10 = EXT:ku_image_with_overlay/Resources/Private/Templates/ContentElements/
+	partialRootPaths.10 = EXT:ku_image_with_overlay/Resources/Private/Partials/ContentElements/
+
+	dataProcessing {
+		10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+		10 {
+			references.fieldName = image
+		}
+	}
+}
