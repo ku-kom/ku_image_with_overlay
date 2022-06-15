@@ -8,7 +8,7 @@
 
 defined('TYPO3_MODE') or die();
 
-// KU image with overlay box custom input field
+// KU image with overlay box custom select
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'ku_color_family' => [
         'exclude' => 0,
@@ -46,19 +46,20 @@ defined('TYPO3_MODE') or die();
     ],
 ]);
 
-// KU image with overlay box
+// KU image with overlay box CTYpe select
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
     'tt_content',
     'CType',
     [
-            'LLL:EXT:ku_image_with_overlay/Resources/Private/Language/locallang_be.xlf:title',
-            'ku_image_with_overlay',
-            'content-text',
+        'LLL:EXT:ku_image_with_overlay/Resources/Private/Language/locallang_be.xlf:title',
+        'ku_image_with_overlay',
+        'content-text',
         ],
     'image',
     'after'
 );
 
+// KU image with overlay palette
 $ku_image_with_overlay = [
     'showitem' => '
     --palette--; LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xml:palette.general; general,header,ku_color_family,header_link,image,
@@ -76,6 +77,6 @@ $ku_image_with_overlay = [
     rowDescription,
     --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended,
     ',
-    ];
+];
 
 $GLOBALS['TCA']['tt_content']['types']['ku_image_with_overlay'] = $ku_image_with_overlay;
