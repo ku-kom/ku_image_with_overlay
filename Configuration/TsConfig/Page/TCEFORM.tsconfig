@@ -6,6 +6,7 @@ TCEFORM {
 
     }
     tt_content {
+        header.config.max = 100
         header_layout.types.ku_image_with_overlay.disabled = 1
         header_position.types.ku_image_with_overlay.disabled = 1
         date.types.ku_image_with_overlay.disabled = 1

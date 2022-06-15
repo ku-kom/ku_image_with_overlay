@@ -1,5 +1,5 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
-<f:debug title="" inline="">{_all}</f:debug>
+
 <f:layout name="Default" />
 <f:section name="Header" />
 <f:spaceless>
@@ -17,15 +17,9 @@
     </f:section>
 </f:spaceless>
 <f:section name="imageWithOverlay">
+    <f:debug title="" inline="">{_all}</f:debug>
     <f:variable name="boxColor">{data.ku_color_family}</f:variable>
-    <f:if condition="{files.0}">
-        <f:then>
-            <f:variable name="imgExists" value="with-img" />
-        </f:then>
-        <f:else>
-            <f:variable name="imgExists" value="no-img" />
-        </f:else>
-    </f:if>
+    <f:variable name="imgExists">{f:if(condition: '{files.0}', else:'no-img', then:'with-img')}</f:variable>
     <div class="image-with-overlay {imgExists}">
         <f:if condition="{files.0}">
             <f:then>
@@ -34,9 +28,11 @@
             </f:then>
         </f:if>
         <div class="image-with-overlay-textposition">
-            <div class="image-with-overlay-text {boxColor}">
-                <h3>{data.header}</h3>
-                <f:comment><f:format.html>{data.bodytext}</f:format.html></f:comment>
+            <div class="image-with-overlay-box {boxColor}">
+                <h2 class="image-with-overlay-text"><span>{data.header}</span></h2>
+                <f:comment>
+                    <f:format.html>{data.bodytext}</f:format.html>
+                </f:comment>
             </div>
         </div>
     </div>
@@ -46,25 +42,32 @@
         .image-with-overlay {
             position: relative;
         }
-        .image-with-overlay-textposition {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            left: 0;
-            max-width: 50%;
-        }
-        .image-with-overlay-text > * {
-            display:inline;
-        }
-        .image-with-overlay-text {
-            font-size: 1.5rem;
-            font-weight:400;
-            display: inline;
-            color: var(--overlay-text-color);
-            background-color: var(--overlay-background);
-            /* box-shadow: 10px 0 0 var(--overlay-background), -10px 0 0 var(--overlay-background);
-            -webkit-box-decoration-break: clone;
-            box-decoration-break: clone; */
+
+        @media all and (min-width: 1200px) {
+            .image-with-overlay-textposition {
+                position: absolute;
+                top: 13%;
+                right: 6%;
+                max-width: 50%;
+                text-align: right;
+            }
+
+            .image-with-overlay-box {
+                display: inline;
+            }
+
+            .image-with-overlay-text>span {
+                font-size: 1.5rem;
+                line-height: 1.6;
+                font-weight: 600;
+                background-color: var(--overlay-background);
+                color: var(--overlay-text-color);
+                box-shadow: -10px 0px 0 6px var(--overlay-background),
+                    10px 0px 0 6px var(--overlay-background),
+                    0 0 0 6px var(--overlay-background);
+                -webkit-box-decoration-break: clone;
+                box-decoration-break: clone;
+            }
         }
     </style>
 </f:section>
