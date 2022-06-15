@@ -26,16 +26,18 @@
             <f:variable name="imgExists" value="no-img" />
         </f:else>
     </f:if>
-    <div class="image-with-overlay {imgExists} {boxColor}">
+    <div class="image-with-overlay {imgExists}">
         <f:if condition="{files.0}">
             <f:then>
                 <!-- <f:image image="{files.0}" width="400c" height="250c" /> -->
                 <f:image class="img-fluid" image="{files.0}" />
             </f:then>
         </f:if>
-        <div class="image-with-overlay-text">
-            <h3>{data.header}</h3>
-            <f:format.html>{data.bodytext}</f:format.html>
+        <div class="image-with-overlay-textposition">
+            <div class="image-with-overlay-text {boxColor}">
+                <h3>{data.header}</h3>
+                <f:comment><f:format.html>{data.bodytext}</f:format.html></f:comment>
+            </div>
         </div>
     </div>
 </f:section>
@@ -44,10 +46,25 @@
         .image-with-overlay {
             position: relative;
         }
-        .image-with-overlay-text {
+        .image-with-overlay-textposition {
             position: absolute;
             top: 50%;
+            transform: translateY(-50%);
             left: 0;
+            max-width: 50%;
+        }
+        .image-with-overlay-text > * {
+            display:inline;
+        }
+        .image-with-overlay-text {
+            font-size: 1.5rem;
+            font-weight:400;
+            display: inline;
+            color: var(--overlay-text-color);
+            background-color: var(--overlay-background);
+            /* box-shadow: 10px 0 0 var(--overlay-background), -10px 0 0 var(--overlay-background);
+            -webkit-box-decoration-break: clone;
+            box-decoration-break: clone; */
         }
     </style>
 </f:section>

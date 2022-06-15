@@ -1,33 +1,8 @@
 ######################
 #### DEPENDENCIES ####
 ######################
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/setup.typoscript">
+# <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/setup.typoscript">
 
-
-##############
-#### PAGE ####
-##############
-page {
-    includeCSS {
-        theme = EXT:ku_image_with_overlay/Resources/Public/Scss/Theme/theme.scss
-    }
-
-    includeJSLibs {
-
-    }
-
-    includeJS {
-
-    }
-
-    includeJSFooterlibs {
-
-    }
-
-    includeJSFooter {
-
-    }
-}
 
 ################################
 #### IMAGE BOX WITH OVERLAY ####

@@ -63,7 +63,7 @@ $frontendLanguageFilePrefix = 'LLL:EXT:frontend/Resources/Private/Language/local
 
 $ku_image_with_overlay = [
     'showitem' => '
-    --palette--; LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xml:palette.general; general,header,ku_color_family,header_link,bodytext,image,
+    --palette--; LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xml:palette.general; general,header,ku_color_family,header_link,image,
     --div--;' . $frontendLanguageFilePrefix . 'tabs.appearance,
     --palette--;' . $frontendLanguageFilePrefix . 'palette.frames;frames,
     --palette--;;appearanceLinks,
@@ -73,18 +73,9 @@ $ku_image_with_overlay = [
     --palette--;;language,
     --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,
         categories,
-    --div--;' . $frontendLanguageFilePrefix . 'tabs.extended,
     --palette--;;hidden,
     --palette--;;access,
     ',
-    'columnsOverrides' => [
-      'bodytext' => [
-         'config' => [
-            'enableRichtext' => true,
-            //'richtextConfiguration' => 'default'
-         ]
-      ]
-    ]
     ];
 
     $GLOBALS['TCA']['tt_content']['types']['ku_image_with_overlay'] = $ku_image_with_overlay;

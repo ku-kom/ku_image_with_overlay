@@ -2,7 +2,7 @@
 
 mod.wizards.newContentElement.wizardItems {
    // add the content element
-   media {
+   common {
       elements {
          ku_image_with_overlay {
             iconIdentifier = content-image
