@@ -53,7 +53,7 @@ defined('TYPO3_MODE') or die();
     [
         'LLL:EXT:ku_image_with_overlay/Resources/Private/Language/locallang_be.xlf:title',
         'ku_image_with_overlay',
-        'content-text',
+        'ku-image-with-overlay-icon',
         ],
     'image',
     'after'
