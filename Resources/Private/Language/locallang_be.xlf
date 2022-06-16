@@ -97,7 +97,7 @@
             <source>Optional button with link</source>
         </trans-unit>
         <trans-unit id="ku_button_placeholder" resname="ku_button_placeholder">
-            <source>Button text</source>
+            <source>Add button text</source>
         </trans-unit>
         <trans-unit id="ku_button_link" resname="ku_button_link">
             <source>Link for the button</source>
