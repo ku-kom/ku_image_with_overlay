@@ -16,13 +16,13 @@
         </f:if>
     </f:section>
 </f:spaceless>
+
 <f:section name="imageWithOverlay">
     <f:variable name="boxColor">{data.ku_color_family}</f:variable>
     <f:variable name="imgExists">{f:if(condition: '{files.0}', else:'no-img', then:'with-img')}</f:variable>
     <div class="image-with-overlay {imgExists}">
         <f:if condition="{files.0}">
             <f:then>
-                <!-- <f:image image="{files.0}" width="400c" height="250c" /> -->
                 <f:image class="img-fluid" image="{files.0}" />
             </f:then>
         </f:if>
@@ -35,38 +35,4 @@
             </div>
         </div>
     </div>
-</f:section>
-<f:section name="HeaderAssets">
-    <style>
-        .image-with-overlay {
-            position: relative;
-        }
-
-        @media all and (min-width: 1200px) {
-            .image-with-overlay-textposition {
-                position: absolute;
-                top: 13%;
-                right: 6%;
-                max-width: 50%;
-                text-align: right;
-            }
-
-            .image-with-overlay-box {
-                display: inline;
-            }
-
-            .image-with-overlay-text>span {
-                font-size: 1.75rem;
-                line-height: 1.6;
-                font-weight: 600;
-                background-color: var(--overlay-background);
-                color: var(--overlay-text-color);
-                box-shadow: -10px 0px 0 6px var(--overlay-background),
-                    10px 0px 0 6px var(--overlay-background),
-                    0 0 0 6px var(--overlay-background);
-                -webkit-box-decoration-break: clone;
-                box-decoration-break: clone;
-            }
-        }
-    </style>
 </f:section>
