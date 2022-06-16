@@ -1,7 +1,7 @@
-// Create new, custom tab:
+// Add to Content element Wizard
 
 mod.wizards.newContentElement.wizardItems {
-   // add the content element
+   // Add to tab "Common"
    common {
       elements {
          ku_image_with_overlay {

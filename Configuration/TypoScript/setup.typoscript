@@ -1,9 +1,3 @@
-######################
-#### DEPENDENCIES ####
-######################
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ku_prototype/Configuration/TypoScript/setup.typoscript">
-
-
 ################################
 #### IMAGE BOX WITH OVERLAY ####
 ################################

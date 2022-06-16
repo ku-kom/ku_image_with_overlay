@@ -1,7 +1,7 @@
 #
 # PageTS for KU: Image with overlay
 #
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ku_image_with_overlay/Configuration/TsConfig/Page/RTE.tsconfig">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ku_image_with_overlay/Configuration/TsConfig/Page/TCEFORM.tsconfig">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ku_image_with_overlay/Configuration/TsConfig/Page/TCEMAIN.tsconfig">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ku_image_with_overlay/Configuration/TsConfig/Page/Mod/WebLayout/Wizards/ImageWithOverlay.tsconfig">
+
+@import 'EXT:ku_prototypEXT:ku_image_with_overlay/Configuration/TsConfig/Page/TCEFORM.tsconfig'
+@import 'EXT:ku_image_with_overlay/Configuration/TsConfig/Page/TCEMAIN.tsconfig'
+@import 'EXT:ku_image_with_overlay/Configuration/TsConfig/Page/Mod/WebLayout/Wizards/ImageWithOverlay.tsconfig'
