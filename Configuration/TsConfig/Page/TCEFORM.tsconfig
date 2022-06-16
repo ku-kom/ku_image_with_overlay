@@ -3,16 +3,15 @@
 #
 TCEFORM {
     pages {
-
+        
     }
     tt_content {
+        header.config.eval = required
         header.config.max = 100
         header_layout.types.ku_image_with_overlay.disabled = 1
         header_position.types.ku_image_with_overlay.disabled = 1
         date.types.ku_image_with_overlay.disabled = 1
-        
-        frame_layout.addItems {
-        }
+        colPos.types.ku_image_with_overlay.disabled = 1
 
         background_image {
             types.ku_image_with_overlay.disabled = 1
@@ -21,6 +20,5 @@ TCEFORM {
         background_image_options {
             types.ku_image_with_overlay.disabled = 1
         }
-        
     }
 }

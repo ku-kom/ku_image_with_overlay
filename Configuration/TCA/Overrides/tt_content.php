@@ -44,9 +44,57 @@ defined('TYPO3_MODE') or die();
             ],
         ],
     ],
+
+    'ku_overlay_button_1' => [
+        'exclude' => 1,
+        'label' => 'LLL:EXT:ku_image_with_overlay/Resources/Private/Language/locallang_be.xlf:ku_button_title',
+        'description' => 'LLL:EXT:ku_image_with_overlay/Resources/Private/Language/locallang_be.xlf:ku_button_desc',
+        'config' => [
+           'type' => 'text',
+           'renderType' => 'input',
+           'placeholder' => 'LLL:EXT:ku_image_with_overlay/Resources/Private/Language/locallang_be.xlf:ku_button_placeholder',
+           'max' => '40',
+        ],
+     ],
+
+     'ku_overlay_link_1' => [
+        'label' => 'Link',
+        'description' => 'LLL:EXT:ku_image_with_overlay/Resources/Private/Language/locallang_be.xlf:ku_button_link',
+        'config' => [
+            'type' => 'input',
+            'renderType' => 'inputLink',
+            // Replace with the following in v.12:
+            //'type' => 'link',
+            //'allowedTypes' => ['page', 'url', 'record'],
+        ],
+    ],
+
+    'ku_overlay_button_2' => [
+        'exclude' => 1,
+        'label' => 'LLL:EXT:ku_image_with_overlay/Resources/Private/Language/locallang_be.xlf:ku_button_title',
+        'description' => 'LLL:EXT:ku_image_with_overlay/Resources/Private/Language/locallang_be.xlf:ku_button_desc',
+        'config' => [
+           'type' => 'text',
+           'renderType' => 'input',
+           'placeholder' => 'LLL:EXT:ku_image_with_overlay/Resources/Private/Language/locallang_be.xlf:ku_button_placeholder',
+           'max' => '40',
+        ],
+     ],
+
+     'ku_overlay_link_2' => [
+        'label' => 'Link',
+        'description' => 'LLL:EXT:ku_image_with_overlay/Resources/Private/Language/locallang_be.xlf:ku_button_link',
+        'config' => [
+            'type' => 'input',
+            'renderType' => 'inputLink',
+            // Replace with the following in v.12:
+            //'type' => 'link',
+            //'allowedTypes' => ['page', 'url', 'record'],
+        ],
+    ],
 ]);
 
-// KU image with overlay box CTYpe select
+// KU image with overlay box CType select
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
     'tt_content',
     'CType',
@@ -62,7 +110,7 @@ defined('TYPO3_MODE') or die();
 // KU image with overlay palette
 $ku_image_with_overlay = [
     'showitem' => '
-    --palette--; LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xml:palette.general; general,header,ku_color_family,header_link,image,
+    --palette--; LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xml:palette.general; general,header,ku_color_family,image,ku_overlay_button_1,ku_overlay_link_1,ku_overlay_button_2,ku_overlay_link_2,
     --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
     --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,
     --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,

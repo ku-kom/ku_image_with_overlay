@@ -90,6 +90,18 @@
         <trans-unit id="ku_color_light3" resname="ku_color_light3">
             <source>KU yellow</source>
         </trans-unit>
+        <trans-unit id="ku_button_title" resname="ku_button_title">
+            <source>Optional: Add button</source>
+        </trans-unit>
+        <trans-unit id="ku_button_desc" resname="ku_button_desc">
+            <source>Optional button with link</source>
+        </trans-unit>
+        <trans-unit id="ku_button_placeholder" resname="ku_button_placeholder">
+            <source>Button text</source>
+        </trans-unit>
+        <trans-unit id="ku_button_link" resname="ku_button_link">
+            <source>Link for the button</source>
+        </trans-unit>
         </body>
     </file>
 </xliff>
