@@ -110,7 +110,7 @@ defined('TYPO3_MODE') or die();
 // KU image with overlay palette
 $ku_image_with_overlay = [
     'showitem' => '
-    --palette--; LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xml:palette.general; general,header,ku_color_family,image,ku_overlay_button_1,ku_overlay_link_1,ku_overlay_button_2,ku_overlay_link_2,
+    --palette--; LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xml:palette.general; general,header,header_position,ku_color_family,image,ku_overlay_button_1,ku_overlay_link_1,ku_overlay_button_2,ku_overlay_link_2,
     --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
     --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,
     --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,

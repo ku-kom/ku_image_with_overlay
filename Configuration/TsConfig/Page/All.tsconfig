@@ -2,6 +2,6 @@
 # PageTS for KU: Image with overlay
 #
 
-@import 'EXT:ku_prototypEXT:ku_image_with_overlay/Configuration/TsConfig/Page/TCEFORM.tsconfig'
+@import 'EXT:ku_image_with_overlay/Configuration/TsConfig/Page/TCEFORM.tsconfig'
 @import 'EXT:ku_image_with_overlay/Configuration/TsConfig/Page/TCEMAIN.tsconfig'
 @import 'EXT:ku_image_with_overlay/Configuration/TsConfig/Page/Mod/WebLayout/Wizards/ImageWithOverlay.tsconfig'
