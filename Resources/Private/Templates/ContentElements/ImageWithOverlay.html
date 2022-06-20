@@ -12,7 +12,9 @@
     <div class="image-with-overlay {imgExists}">
         <f:if condition="{files.0}">
             <f:then>
-                <f:render partial="Media/Rendering/responsiveImage" arguments="{file: files.0, data: data, settings: settings, variants: variants}" />
+                <figure class="image">
+                    <f:render partial="Media/Rendering/responsiveImage" arguments="{file: files.0, data: data, settings: settings, variants: variants}" />
+                </figure>
             </f:then>
         </f:if>
         <div class="image-with-overlay-textposition {data.header_position}">
@@ -39,7 +41,5 @@
                 </div>
             </f:then>
         </f:if>
-
-        
     </div>
 </f:section>
