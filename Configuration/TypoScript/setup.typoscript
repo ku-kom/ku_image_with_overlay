@@ -7,7 +7,8 @@ tt_content.ku_image_with_overlay {
 	templateRootPaths.10 = EXT:ku_image_with_overlay/Resources/Private/Templates/ContentElements/
 	partialRootPaths {
 		10 = EXT:ku_image_with_overlay/Resources/Private/Partials/ContentElements/
-		20 = EXT:ku_prototype/Resources/Private/Partials/ContentElements/
+		20 = EXT:bootstrap_package/Resources/Private/Partials/ContentElements/
+		30 = EXT:ku_prototype/Resources/Private/Partials/ContentElements/
 	}
 
 	dataProcessing {
