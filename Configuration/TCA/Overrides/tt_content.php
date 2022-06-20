@@ -129,3 +129,68 @@ $ku_image_with_overlay = [
 ];
 
 $GLOBALS['TCA']['tt_content']['types']['ku_image_with_overlay'] = $ku_image_with_overlay;
+
+// Add crop variants for KU Image with overlay
+$GLOBALS['TCA']['tt_content']['types']['ku_image_with_overlay']['columnsOverrides']['image']['config']['overrideChildTca']['columns']['crop']['config'] = [
+    'cropVariants' => [
+        'default' => [
+            'title' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:option.default',
+            'selectedRatio' => 'NaN',
+            'allowedAspectRatios' => [
+                '16:9' => [
+                    'title' => '16:9', 
+                    'value' => 16 / 9
+                ],
+                '4:3' => [
+                    'title' => '4:3', 
+                    'value' => 4 / 3
+                ],
+                'NaN' => [
+                    'title' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:ratio.free', 'value' => 0.0
+                ],
+            ],
+            'coverAreas' => [
+                [
+                    'x' => 0.5,
+                    'y' => 0.1,
+                    'width' => 0.5,
+                    'height' => 0.4,
+                ]
+            ],
+        ],
+        'medium' => [
+            'title' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:option.medium',
+            'selectedRatio' => 'NaN',
+            'allowedAspectRatios' => [
+                '16:9' => [
+                    'title' => '16:9', 
+                    'value' => 16 / 9
+                ],
+                '4:3' => [
+                    'title' => '4:3', 
+                    'value' => 4 / 3
+                ],
+                'NaN' => [
+                    'title' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:ratio.free', 'value' => 0.0
+                ],
+            ],
+        ],
+        'small' => [
+            'title' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:option.small',
+            'selectedRatio' => 'NaN',
+            'allowedAspectRatios' => [
+                '16:9' => [
+                    'title' => '16:9', 
+                    'value' => 16 / 9
+                ],
+                '4:3' => [
+                    'title' => '4:3', 
+                    'value' => 4 / 3
+                ],
+                'NaN' => [
+                    'title' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:ratio.free', 'value' => 0.0
+                ],
+            ],
+        ],
+    ],
+];
