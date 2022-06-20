@@ -42,6 +42,7 @@ defined('TYPO3_MODE') or die();
                 ['LLL:EXT:ku_image_with_overlay/Resources/Private/Language/locallang_be.xlf:ku_color_light2', 'box-light2'],
                 ['LLL:EXT:ku_image_with_overlay/Resources/Private/Language/locallang_be.xlf:ku_color_light3', 'box-light3'],
             ],
+            'default' => 'box-blue2',
         ],
     ],
 

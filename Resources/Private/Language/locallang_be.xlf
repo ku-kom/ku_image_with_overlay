@@ -22,73 +22,73 @@
             <source>KU red color family</source>
         </trans-unit>
         <trans-unit id="ku_color_red1" resname="ku_color_red1">
-            <source>KU red light</source>
+            <source>Red light</source>
         </trans-unit>
         <trans-unit id="ku_color_red2" resname="ku_color_red2">
-            <source>KU red medium</source>
+            <source>Red medium</source>
         </trans-unit>
         <trans-unit id="ku_color_red3" resname="ku_color_red3">
-            <source>KU red dark</source>
+            <source>Red dark</source>
         </trans-unit>
         <trans-unit id="ku_color_blue_header" resname="ku_color_blue_header">
             <source>KU blue color family</source>
         </trans-unit>
         <trans-unit id="ku_color_blue1" resname="ku_color_blue1">
-            <source>KU blue light</source>
+            <source>Blue light</source>
         </trans-unit>
         <trans-unit id="ku_color_blue2" resname="ku_color_blue2">
-            <source>KU blue medium</source>
+            <source>Blue medium</source>
         </trans-unit>
         <trans-unit id="ku_color_blue3" resname="ku_color_blue3">
-            <source>KU blue dark</source>
+            <source>Blue dark</source>
         </trans-unit>
         <trans-unit id="ku_color_teal_header" resname="ku_color_teal_header">
             <source>KU teal color family</source>
         </trans-unit>
         <trans-unit id="ku_color_teal1" resname="ku_color_teal1">
-            <source>KU teal light</source>
+            <source>Teal light</source>
         </trans-unit>
         <trans-unit id="ku_color_teal2" resname="ku_color_teal2">
-            <source>KU teal medium</source>
+            <source>Teal medium</source>
         </trans-unit>
         <trans-unit id="ku_color_teal3" resname="ku_color_teal3">
-            <source>KU teal dark</source>
+            <source>Teal dark</source>
         </trans-unit>
         <trans-unit id="ku_color_green_header" resname="ku_color_green_header">
             <source>KU green color family</source>
         </trans-unit>
         <trans-unit id="ku_color_green1" resname="ku_color_green1">
-            <source>KU green light</source>
+            <source>Green light</source>
         </trans-unit>
         <trans-unit id="ku_color_green2" resname="ku_color_green2">
-            <source>KU green medium</source>
+            <source>Green medium</source>
         </trans-unit>
         <trans-unit id="ku_color_green3" resname="ku_color_green3">
-            <source>KU green dark</source>
+            <source>Green dark</source>
         </trans-unit>
         <trans-unit id="ku_color_grey_header" resname="ku_color_grey_header">
             <source>KU grey color family</source>
         </trans-unit>
         <trans-unit id="ku_color_grey1" resname="ku_color_grey1">
-            <source>KU grey light</source>
+            <source>Grey light</source>
         </trans-unit>
         <trans-unit id="ku_color_grey2" resname="ku_color_grey2">
-            <source>KU grey medium</source>
+            <source>Grey medium</source>
         </trans-unit>
         <trans-unit id="ku_color_grey3" resname="ku_color_grey3">
-            <source>KU grey dark</source>
+            <source>Grey dark</source>
         </trans-unit>
         <trans-unit id="ku_color_light_header" resname="ku_color_light_header">
             <source>KU white/yellow color family</source>
         </trans-unit>
         <trans-unit id="ku_color_light1" resname="ku_color_light1">
-            <source>KU white</source>
+            <source>White</source>
         </trans-unit>
         <trans-unit id="ku_color_light2" resname="ku_color_light2">
-            <source>KU champagne</source>
+            <source>Champagne</source>
         </trans-unit>
         <trans-unit id="ku_color_light3" resname="ku_color_light3">
-            <source>KU yellow</source>
+            <source>Yellow</source>
         </trans-unit>
         <trans-unit id="ku_button_title" resname="ku_button_title">
             <source>Optional: Add button</source>
