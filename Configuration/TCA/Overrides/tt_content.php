@@ -135,14 +135,18 @@ $GLOBALS['TCA']['tt_content']['types']['ku_image_with_overlay']['columnsOverride
     'cropVariants' => [
         'default' => [
             'title' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:option.default',
-            'selectedRatio' => 'NaN',
+            'selectedRatio' => '11:6',
             'allowedAspectRatios' => [
+                '11:6' => [
+                    'title' => '11:6',
+                    'value' => 11 / 6
+                ],
                 '16:9' => [
-                    'title' => '16:9', 
+                    'title' => '16:9',
                     'value' => 16 / 9
                 ],
                 '4:3' => [
-                    'title' => '4:3', 
+                    'title' => '4:3',
                     'value' => 4 / 3
                 ],
                 'NaN' => [
@@ -160,14 +164,18 @@ $GLOBALS['TCA']['tt_content']['types']['ku_image_with_overlay']['columnsOverride
         ],
         'medium' => [
             'title' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:option.medium',
-            'selectedRatio' => 'NaN',
+            'selectedRatio' => '11:6',
             'allowedAspectRatios' => [
+                '11:6' => [
+                    'title' => '11:6',
+                    'value' => 11 / 6
+                ],
                 '16:9' => [
-                    'title' => '16:9', 
+                    'title' => '16:9',
                     'value' => 16 / 9
                 ],
                 '4:3' => [
-                    'title' => '4:3', 
+                    'title' => '4:3',
                     'value' => 4 / 3
                 ],
                 'NaN' => [
@@ -177,14 +185,18 @@ $GLOBALS['TCA']['tt_content']['types']['ku_image_with_overlay']['columnsOverride
         ],
         'small' => [
             'title' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:option.small',
-            'selectedRatio' => 'NaN',
+            'selectedRatio' => '11:6',
             'allowedAspectRatios' => [
+                '11:6' => [
+                    'title' => '11:6',
+                    'value' => 11 / 6
+                ],
                 '16:9' => [
-                    'title' => '16:9', 
+                    'title' => '16:9',
                     'value' => 16 / 9
                 ],
                 '4:3' => [
-                    'title' => '4:3', 
+                    'title' => '4:3',
                     'value' => 4 / 3
                 ],
                 'NaN' => [
