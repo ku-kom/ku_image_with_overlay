@@ -99,10 +99,10 @@ defined('TYPO3_MODE') or die();
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
     'tt_content',
     'CType',
-    [
-        'LLL:EXT:ku_image_with_overlay/Resources/Private/Language/locallang_be.xlf:title',
-        'ku_image_with_overlay',
-        'ku-image-with-overlay-icon',
+        [
+            'LLL:EXT:ku_image_with_overlay/Resources/Private/Language/locallang_be.xlf:title',
+            'ku_image_with_overlay',
+            'ku-image-with-overlay-icon',
         ],
     'image',
     'after'
@@ -150,7 +150,8 @@ $GLOBALS['TCA']['tt_content']['types']['ku_image_with_overlay']['columnsOverride
                     'value' => 4 / 3
                 ],
                 'NaN' => [
-                    'title' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:ratio.free', 'value' => 0.0
+                    'title' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:ratio.free', 
+                    'value' => 0.0
                 ],
             ],
             'coverAreas' => [
@@ -179,7 +180,8 @@ $GLOBALS['TCA']['tt_content']['types']['ku_image_with_overlay']['columnsOverride
                     'value' => 4 / 3
                 ],
                 'NaN' => [
-                    'title' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:ratio.free', 'value' => 0.0
+                    'title' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:ratio.free', 
+                    'value' => 0.0
                 ],
             ],
         ],
@@ -200,7 +202,8 @@ $GLOBALS['TCA']['tt_content']['types']['ku_image_with_overlay']['columnsOverride
                     'value' => 4 / 3
                 ],
                 'NaN' => [
-                    'title' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:ratio.free', 'value' => 0.0
+                    'title' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:ratio.free', 
+                    'value' => 0.0
                 ],
             ],
         ],
