@@ -6,15 +6,14 @@
         <f:render section="imageWithOverlay" arguments="{_all}" />
     </f:section>
 </f:spaceless>
+
 <f:section name="imageWithOverlay">
     <f:variable name="boxColor">{data.ku_color_family}</f:variable>
     <f:variable name="imgExists">{f:if(condition: '{files.0}', else:'no-img', then:'with-img')}</f:variable>
     <div class="image-with-overlay {imgExists}">
         <f:if condition="{files.0}">
             <f:then>
-                <figure class="image">
-                    <f:render partial="Media/Type" arguments="{file: files.0, data: data, settings: settings, variants: variants}" />
-                </figure>
+                <f:render partial="Media/Type" arguments="{file: files.0, data: data, settings: settings, variants: variants}" />
             </f:then>
         </f:if>
         <div class="image-with-overlay-textposition {data.header_position}">
