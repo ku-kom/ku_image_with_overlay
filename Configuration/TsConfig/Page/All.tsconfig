@@ -1,5 +1,5 @@
 #
-# PageTS for KU: Image with overlay
+# PageTS for KU Image with overlay
 #
 
 @import 'EXT:ku_image_with_overlay/Configuration/TsConfig/Page/TCEFORM.tsconfig'
