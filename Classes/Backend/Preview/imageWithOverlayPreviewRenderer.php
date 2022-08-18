@@ -19,8 +19,9 @@ class imageWithOverlayPreviewRenderer implements PreviewRendererInterface
 {
     public function renderPageModulePreviewHeader(GridColumnItem $item): string
     {
-        $record = $item->getRecord();
-        return $record['CType'];
+        // $record = $item->getRecord();
+        // return $record['CType'];
+        return '';
     }
 
     public function renderPageModulePreviewContent(GridColumnItem $item): string
@@ -33,6 +34,8 @@ class imageWithOverlayPreviewRenderer implements PreviewRendererInterface
         return '
         <div class="content-element-text ' . $record['ku_color_family'] . '">' . $record['header'] . '</div>
         <div class="content-element-media">' . $image . '</div>
+        <div class="content-element-buttons">' . $record['ku_overlay_button_1'] . '</div>
+        <div class="content-element-buttons">' . $record['ku_overlay_button_2'] . '</div>
         ';
     }
 
