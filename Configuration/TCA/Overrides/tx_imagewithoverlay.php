@@ -9,7 +9,7 @@
 defined('TYPO3_MODE') or die();
 
 /**
- * Registers previewRenderer for custom content element "Image with overlay".
+ * Registers backend previewRenderer for custom content element "Image with overlay".
  */
 
 $GLOBALS['TCA']['tt_content']['types']['ku_image_with_overlay']['previewRenderer'] = \UniversityOfCopenhagen\KuImageWithOverlay\Backend\Preview\imageWithOverlayPreviewRenderer::class;
