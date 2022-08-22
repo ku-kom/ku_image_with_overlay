@@ -10,10 +10,8 @@ declare(strict_types=1);
 namespace UniversityOfCopenhagen\KuImageWithOverlay\Backend\Preview;
 
 use TYPO3\CMS\Backend\Preview\PreviewRendererInterface;
-use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Backend\Utility\BackendUtility;
 use TYPO3\CMS\Backend\View\BackendLayout\Grid\GridColumnItem;
-
 
 class imageWithOverlayPreviewRenderer implements PreviewRendererInterface
 {
@@ -51,7 +49,7 @@ class imageWithOverlayPreviewRenderer implements PreviewRendererInterface
         $preview = $previewHeader || $previewContent ? '<div class="image-with-overlay-preview">' . $previewHeader . $previewContent . '</div>' : '';
         return $preview;
     }
-    
+
     /**
      * Create thumbnail code for record/field but not linked
     *
@@ -64,5 +62,4 @@ class imageWithOverlayPreviewRenderer implements PreviewRendererInterface
     {
         return BackendUtility::thumbCode($row, $table, $field, '', '', null, 0, '', '', false);
     }
-
 }
