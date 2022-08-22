@@ -43,6 +43,8 @@ defined('TYPO3_MODE') or die();
                 ['LLL:EXT:ku_image_with_overlay/Resources/Private/Language/locallang_be.xlf:ku_color_light3', 'box-light3'],
             ],
             'default' => 'box-blue2',
+
+ 
         ],
     ],
 
@@ -129,6 +131,12 @@ $ku_image_with_overlay = [
 ];
 
 $GLOBALS['TCA']['tt_content']['types']['ku_image_with_overlay'] = $ku_image_with_overlay;
+
+// Define allowed file types for KU Image with overlay
+$allowedFileExtensions = 'jpg,jpeg,png,svg';
+
+$GLOBALS['TCA']['tt_content']['types']['ku_image_with_overlay']['columnsOverrides']['image']['config']['filter'][0]['parameters']['allowedFileExtensions'] = $allowedFileExtensions;
+$GLOBALS['TCA']['tt_content']['types']['ku_image_with_overlay']['columnsOverrides']['image']['config']['overrideChildTca']['columns']['uid_local']['config']['appearance']['elementBrowserAllowed'] = $allowedFileExtensions;
 
 // Add crop variants for KU Image with overlay
 $GLOBALS['TCA']['tt_content']['types']['ku_image_with_overlay']['columnsOverrides']['image']['config']['overrideChildTca']['columns']['crop']['config'] = [
