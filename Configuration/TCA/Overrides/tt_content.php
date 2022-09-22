@@ -134,8 +134,14 @@ $GLOBALS['TCA']['tt_content']['types']['ku_image_with_overlay'] = $ku_image_with
 // Define allowed file types for KU Image with overlay
 $allowedFileExtensions = 'jpg,jpeg,png,svg';
 
+// Assin allowed file types
 $GLOBALS['TCA']['tt_content']['types']['ku_image_with_overlay']['columnsOverrides']['image']['config']['filter'][0]['parameters']['allowedFileExtensions'] = $allowedFileExtensions;
 $GLOBALS['TCA']['tt_content']['types']['ku_image_with_overlay']['columnsOverrides']['image']['config']['overrideChildTca']['columns']['uid_local']['config']['appearance']['elementBrowserAllowed'] = $allowedFileExtensions;
+
+// Make image upload mandatory
+$GLOBALS['TCA']['tt_content']['types']['ku_image_with_overlay']['columnsOverrides']['image']['config'] = [
+    'minitems' => 1
+];
 
 // Add crop variants for KU Image with overlay
 $GLOBALS['TCA']['tt_content']['types']['ku_image_with_overlay']['columnsOverrides']['image']['config']['overrideChildTca']['columns']['crop']['config'] = [
